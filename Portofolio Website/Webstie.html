@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fal</title>
+  <style>
+    /* CSS styling */
+    body {
+      font-family: Neue Montreal, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #1DA1F2;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .social-media {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .profile {
+      text-align: center;
+    }
+    
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .profile h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .profile p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .social-links a {
+      text-align: center;
+      width: 4px;
+      height: 4px;
+      display: inline-block;
+      margin: 0 10px;
+      color: #1DA1F2;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .social-media img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+    
+    /* ... */
+
+    #copyright {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // JavaScript code to calculate age and current year
+    document.addEventListener("DOMContentLoaded", function() {
+      var birthday = new Date("March 26, 2006");
+      var today = new Date();
+      
+      var age = today.getFullYear() - birthday.getFullYear();
+      if (today.getMonth() < birthday.getMonth() || (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate())) {
+        age--;
+      }
+      
+      var ageElement = document.getElementById("age");
+      if (ageElement) {
+        ageElement.textContent = age;
+      }
+      
+      var currentYear = today.getFullYear();
+      var copyrightElement = document.getElementById("copyright");
+      if (copyrightElement) {
+        copyrightElement.textContent = "© " + currentYear + " Falwndr, All Rights Reserved";
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <div class="content">
+    <div class="profile">
+      <img src="Pfp/insta new pfp_00000.jpg" alt="Profile Picture">
+      <h1>Fal</h1>
+      <p>Experimental Editor, Visual Effects Artist, and 3D Designer.</p>
+    </div>
+    
+    <div>
+      <h2>About Me</h2>
+      <p><span id="age"></span> years old editor.</p>
+    </div>
+    
+    <div>
+      <h2>Interested in working together?</h2>
+      <p>Email me at <a href="https://www.youtube.com/channel/your_channel" target="_blank"</a>falwndr@gmail.com</p><a></a>
+    </div>
+    
+    <div>
+      <h2>Latest Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qcl3uY4EE4g" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="social-media">
+      <a href="https://www.youtube.com/@faltaketheworld" target="_blank"><img src="Icons/YOUTUBE PNG BIG.png" alt=""></a>
+      <a href="https://www.instagram.com/l.laf_" target="_blank"><img src="Icons/Instagram PNG.png" alt=""></a>
+      <a href="https://open.spotify.com/user/4mbqujytm53dqjqbykf7efw3r?si=24227d14866b4718" target="_blank"><img src="Icons/Spotify PNG.png" alt=""></a>
+      <a href="https://open.spotify.com/user/4mbqujytm53dqjqbykf7efw3r?si=24227d14866b4718" target="_blank"><img src="Icons/Mail PNG.png" alt=""></a>
+    </div>
+    
+    <div>
+      <p id="copyright">
+        © <script>document.write(new Date().getFullYear())</script> Falwndr, All Rights Reserved
+      
